@@ -1,0 +1,17 @@
+{
+	"pageElement": {
+		"pageElements": [
+			{
+				"definition": {
+					"fragment": {
+						"key": "sitekit-forgot-password"
+					},
+					"fragmentConfig": {},
+					"fragmentFields": []
+				},
+				"type": "Fragment"
+			}
+		],
+		"type": "Root"
+	}
+}

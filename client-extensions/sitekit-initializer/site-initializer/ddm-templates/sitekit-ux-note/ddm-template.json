@@ -1,0 +1,7 @@
+{
+	"className": "com.liferay.template.model.TemplateEntry",
+	"ddmTemplateKey": "SITEKIT-UX-NOTE",
+	"infoItemClassName": "[$OBJECT_DEFINITION_CLASS_NAME:UserExperience$]",
+	"name": "Sitekit UX Note",
+	"resourceClassName": "com.liferay.template.model.TemplateEntry"
+}

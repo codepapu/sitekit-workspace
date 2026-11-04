@@ -1,0 +1,25 @@
+[
+	{
+		"emailAddress": "admin.adam@sitekit.example",
+		"roles": [
+			"Administrator",
+			"Power User",
+			"Teacher",
+			"User"
+		]
+	},
+	{
+		"emailAddress": "member.carl@sitekit.example",
+		"roles": [
+			"Student",
+			"User"
+		]
+	},
+	{
+		"emailAddress": "support.sam@sitekit.example",
+		"roles": [
+			"Teacher",
+			"User"
+		]
+	}
+]

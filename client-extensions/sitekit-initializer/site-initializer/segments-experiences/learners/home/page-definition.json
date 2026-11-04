@@ -1,0 +1,193 @@
+{
+	"pageElement": {
+		"pageElements": [
+			{
+				"definition": {
+					"fragmentStyle": {
+						"backgroundColor": "brandColor1",
+						"paddingBottom": "6",
+						"paddingTop": "6"
+					},
+					"layout": {
+						"paddingBottom": 6,
+						"paddingTop": 6,
+						"widthType": "Fixed"
+					}
+				},
+				"pageElements": [
+					{
+						"definition": {
+							"fragment": {
+								"key": "sitekit-heading"
+							},
+							"fragmentConfig": {
+								"displayLevel": "0",
+								"headingLevel": "h1"
+							},
+							"fragmentFields": [
+								{
+									"id": "element-text",
+									"value": {
+										"fragmentLink": {
+											"value_i18n": {}
+										},
+										"text": {
+											"value_i18n": {
+												"en_US": "Continue your Sitekit path"
+											}
+										}
+									}
+								}
+							],
+							"fragmentStyle": {
+								"fontFamily": "fontFamilySansSerif",
+								"marginBottom": "3",
+								"textColor": "white"
+							}
+						},
+						"type": "Fragment"
+					},
+					{
+						"definition": {
+							"fragment": {
+								"key": "sitekit-text-block"
+							},
+							"fragmentConfig": {},
+							"fragmentFields": [
+								{
+									"id": "element-text",
+									"value": {
+										"fragmentLink": {
+											"value_i18n": {}
+										},
+										"text": {
+											"value_i18n": {
+												"en_US": "Pick up where you left off, browse featured courses, and jump into your private learning space."
+											}
+										}
+									}
+								}
+							],
+							"fragmentStyle": {
+								"fontSize": "fontSizeLg",
+								"marginBottom": "4",
+								"textColor": "white"
+							}
+						},
+						"type": "Fragment"
+					},
+					{
+						"definition": {
+							"fragment": {
+								"key": "sitekit-button"
+							},
+							"fragmentConfig": {
+								"buttonSize": "lg",
+								"buttonType": "primary"
+							},
+							"fragmentFields": [
+								{
+									"id": "link",
+									"value": {
+										"fragmentLink": {
+											"value": {
+												"href": {
+													"value": "/my-learning"
+												},
+												"target": "_self"
+											},
+											"value_i18n": {}
+										},
+										"text": {
+											"value_i18n": {
+												"en_US": "My learning"
+											}
+										}
+									}
+								}
+							]
+						},
+						"type": "Fragment"
+					}
+				],
+				"type": "Section"
+			},
+			{
+				"definition": {
+					"fragmentStyle": {
+						"paddingBottom": "5",
+						"paddingTop": "5"
+					},
+					"layout": {
+						"paddingBottom": 5,
+						"paddingTop": 5,
+						"widthType": "Fixed"
+					}
+				},
+				"pageElements": [
+					{
+						"definition": {
+							"fragment": {
+								"key": "sitekit-heading"
+							},
+							"fragmentConfig": {
+								"displayLevel": "0",
+								"headingLevel": "h2"
+							},
+							"fragmentFields": [
+								{
+									"id": "element-text",
+									"value": {
+										"fragmentLink": {
+											"value_i18n": {}
+										},
+										"text": {
+											"value_i18n": {
+												"en_US": "Learner shortcuts"
+											}
+										}
+									}
+								}
+							],
+							"fragmentStyle": {
+								"marginBottom": "3"
+							}
+						},
+						"type": "Fragment"
+					},
+					{
+						"definition": {
+							"fragment": {
+								"key": "sitekit-text-block"
+							},
+							"fragmentConfig": {},
+							"fragmentFields": [
+								{
+									"id": "element-text",
+									"value": {
+										"fragmentLink": {
+											"value_i18n": {}
+										},
+										"text": {
+											"value_i18n": {
+												"en_US": "This Home layout is a Segments Experience for Sitekit. Default visitors still see the standard Home; this version appears only for the matched segment."
+											}
+										}
+									}
+								}
+							]
+						},
+						"type": "Fragment"
+					}
+				],
+				"type": "Section"
+			}
+		],
+		"type": "Root"
+	},
+	"settings": {
+		"masterPage": {
+			"key": "main-2"
+		}
+	}
+}

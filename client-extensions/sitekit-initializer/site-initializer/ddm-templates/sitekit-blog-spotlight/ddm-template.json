@@ -1,0 +1,7 @@
+{
+	"className": "com.liferay.template.model.TemplateEntry",
+	"ddmTemplateKey": "SITEKIT-BLOG-SPOTLIGHT",
+	"infoItemClassName": "com.liferay.journal.model.JournalArticle",
+	"name": "Sitekit Blog Spotlight",
+	"resourceClassName": "com.liferay.template.model.TemplateEntry"
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sitekit — The learning platform for the web</title>
+    <meta name="description" content="Sitekit HTML wireframe inspired by nextjs.org navigation, hero, and motion." />
+    <link rel="stylesheet" href="assets/css/sitekit.css" />
+  </head>
+  <body>
+    <div class="nx-top">
+      <span>Sitekit Open Learning</span>
+      <span aria-hidden="true">·</span>
+      <a href="mentors.html">Meet the mentors →</a>
+    </div>
+
+    <header class="nx-nav" data-nav>
+      <div class="nx-nav__inner">
+        <div class="nx-brand-wrap">
+          <button class="nx-brand" type="button" aria-expanded="false" aria-haspopup="true" data-brand-toggle>
+            <svg class="nx-brand__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path fill="currentColor" d="m12.8 3.44c-.38-.5-1.22-.5-1.6 0L2.2 15.44c-.18.24-.24.56-.17.85s.28.54.56.66l9 4c.13.06.27.09.41.09s.28-.03.41-.09l9-4c.28-.12.48-.37.56-.66s.02-.61-.17-.85L12.8 3.44Zm-1.8 15.06-6.45-2.87 6.45-8.6v11.47Zm2 0V7.04l6.45 8.6-6.45 2.86Z" fill="currentColor" />
+            </svg>
+            Sitekit
+            <svg class="nx-brand__chev" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </button>
+          <div class="nx-drop" data-drop>
+            <a href="index.html"><strong>Sitekit</strong><span>The learning platform for the web</span></a>
+            <a href="courses.html"><strong>Courses</strong><span>Outcome-based programs</span></a>
+            <a href="mentors.html"><strong>Mentors</strong><span>Practitioners &amp; educators</span></a>
+          </div>
+        </div>
+
+        <ul class="nx-links">
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="index.html#learn">Learn</a></li>
+          <li><a href="mentors.html">Showcase</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="apply.html">Apply <span class="ext" aria-hidden="true">↗</span></a></li>
+          <li><a href="create-account.html">Deploy <span class="ext" aria-hidden="true">↗</span></a></li>
+        </ul>
+
+        <div class="nx-actions">
+          <button class="nx-search" type="button" data-search>
+            Search…
+            <kbd>⌘K</kbd>
+          </button>
+          <a class="nx-login" href="sign-in.html">Login</a>
+          <button class="nx-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" data-menu>
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="nx-drawer" data-drawer aria-hidden="true">
+      <div class="nx-drawer__scrim" data-drawer-close></div>
+      <nav class="nx-drawer__panel" aria-label="Mobile">
+        <a href="mentors.html">Speakers</a>
+        <a href="courses.html">Sessions</a>
+        <a href="apply.html">Workshops</a>
+        <a href="sign-in.html">Login</a>
+        <a href="blog.html">Blog</a>
+        <a href="create-account.html">Get started</a>
+      </nav>
+    </div>
+
+    <main>
+      <section class="nx-hero">
+        <div class="nx-hero__watermark" data-watermark aria-hidden="true">SITE</div>
+        <div class="nx-hero__content">
+          <h1>The learning platform for the web</h1>
+          <p class="nx-hero__sub">
+            Courses, classrooms, and mentors in one coherent path—used when clarity and craft matter.
+          </p>
+          <div class="nx-hero__cta">
+            <a class="nx-btn nx-btn--black" href="create-account.html">Get Started</a>
+            <div class="nx-cmd">
+              <code>npx create-sitekit@latest</code>
+              <button type="button" aria-label="Copy command" data-copy="npx create-sitekit@latest">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <rect x="5" y="5" width="8" height="8" rx="1.5" stroke="currentColor" />
+                  <path d="M3 10V3.5A1.5 1.5 0 0 1 4.5 2H10" stroke="currentColor" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="nx-section nx-section--border" id="learn">
+        <div class="sk-wrap">
+          <div data-reveal>
+            <p class="nx-kicker">Platform</p>
+            <h2 class="nx-h2">Everything you need to learn and ship</h2>
+            <p class="nx-lead">
+              Feature grid patterned after nextjs.org—hairline borders, dense value props, hover wash.
+            </p>
+          </div>
+          <div class="nx-grid" data-reveal-stagger>
+            <a class="nx-card" href="courses.html">
+              <svg class="nx-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h10M4 17h14" /></svg>
+              <h3>Built-in learning paths</h3>
+              <p>Automatic sequencing of lessons, projects, and reviews for clearer outcomes and less thrash.</p>
+            </a>
+            <a class="nx-card" href="courses.html">
+              <svg class="nx-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16M12 4v16" /></svg>
+              <h3>Live classrooms</h3>
+              <p>Stream critique and office hours with the same calm surface as your async modules.</p>
+            </a>
+            <a class="nx-card" href="mentors.html">
+              <svg class="nx-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="8" r="3"/><circle cx="16" cy="9" r="2.5"/><path d="M3 19c1.5-3 4-4.5 6-4.5S13.5 16 15 19M14 14.5c1.5 0 3 .8 4 2.5"/></svg>
+              <h3>Mentor network</h3>
+              <p>Practitioners from product teams—same presentation language as Conf speakers.</p>
+            </a>
+            <a class="nx-card" href="blog.html">
+              <svg class="nx-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 5h14v14H5zM8 9h8M8 13h6"/></svg>
+              <h3>Editorial system</h3>
+              <p>Guides and release notes that stay readable—mono meta, strong titles, quiet body.</p>
+            </a>
+            <a class="nx-card" href="apply.html">
+              <svg class="nx-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M5 10l7-7 7 7"/></svg>
+              <h3>Apply to teach</h3>
+              <p>One form, one purpose—map directly to the Site Initializer apply layout later.</p>
+            </a>
+            <a class="nx-card" href="sign-in.html">
+              <svg class="nx-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+              <h3>Auth that disappears</h3>
+              <p>Sign-in, register, reset—Next-like chrome wrapping Liferay portlets in the SI phase.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="nx-section nx-section--border">
+        <div class="sk-wrap">
+          <div data-reveal>
+            <p class="nx-kicker">Foundation</p>
+            <h2 class="nx-h2">Built on production-grade craft</h2>
+            <p class="nx-lead">Three pillars—same density as the Next.js tooling strip.</p>
+          </div>
+          <div class="nx-tools" data-reveal-stagger>
+            <article class="nx-tool">
+              <h3>Curriculum</h3>
+              <p>Outcome modules with briefs, critiques, and a finish line you can feel.</p>
+            </article>
+            <article class="nx-tool">
+              <h3>Classroom</h3>
+              <p>Cohorts, progress, and mentorship without dashboard noise in the first viewport.</p>
+            </article>
+            <article class="nx-tool">
+              <h3>Portfolio</h3>
+              <p>Ship real work while you learn—motion and critique included.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="nx-section nx-section--border">
+        <div class="sk-wrap">
+          <div data-reveal>
+            <p class="nx-kicker">Trusted</p>
+            <h2 class="nx-h2">The platform of choice when it matters</h2>
+            <p class="nx-lead">For clarity, craft, and mentor access. Sitekit is built for serious learners.</p>
+          </div>
+          <div class="nx-logos" data-reveal>
+            <span>Notion</span><span>Linear</span><span>Figma</span><span>Vercel</span><span>Stripe</span><span>OpenAI</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="nx-deploy" data-reveal>
+        <div class="sk-wrap">
+          <h2>Ready to start?</h2>
+          <p>Create an account or explore mentors—same destinations the Site Initializer will wire.</p>
+          <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap">
+            <a class="nx-btn nx-btn--black" href="create-account.html">Get Started</a>
+            <a class="nx-btn nx-btn--ghost" href="mentors.html">View mentors</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="nx-footer">
+      <div class="sk-wrap nx-footer__grid">
+        <div>
+          <a class="nx-brand" href="index.html">
+            <svg class="nx-brand__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path fill="currentColor" d="m12.8 3.44c-.38-.5-1.22-.5-1.6 0L2.2 15.44c-.18.24-.24.56-.17.85s.28.54.56.66l9 4c.13.06.27.09.41.09s.28-.03.41-.09l9-4c.28-.12.48-.37.56-.66s.02-.61-.17-.85L12.8 3.44Zm-1.8 15.06-6.45-2.87 6.45-8.6v11.47Zm2 0V7.04l6.45 8.6-6.45 2.86Z" fill="currentColor"/></svg>
+            Sitekit
+          </a>
+          <p style="color:var(--muted);margin:1rem 0 0;max-width:28ch;font-size:.9rem">
+            HTML wireframe matching nextjs.org + Conf speakers navigation and motion.
+          </p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <ul>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="mentors.html">Mentors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Account</h4>
+          <ul>
+            <li><a href="sign-in.html">Login</a></li>
+            <li><a href="create-account.html">Get Started</a></li>
+            <li><a href="forgot-password.html">Forgot password</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="index.html#learn">Learn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="sk-wrap nx-footer__copy">
+        <span>© Sitekit wireframe</span>
+        <span>Inspired by nextjs.org</span>
+      </div>
+    </footer>
+
+    <div class="nx-toast" data-toast role="status"></div>
+    <script src="assets/js/sitekit.js"></script>
+  </body>
+</html>

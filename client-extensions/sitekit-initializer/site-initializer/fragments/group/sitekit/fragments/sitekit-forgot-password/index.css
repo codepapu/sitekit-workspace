@@ -1,0 +1,191 @@
+.sitekit-auth.nx-auth {
+	min-height: calc(100svh - 64px);
+	display: grid;
+	background: var(--bg, #fff);
+}
+
+@media (min-width: 900px) {
+	.sitekit-auth.nx-auth {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.sitekit-auth .nx-auth__aside {
+	display: none;
+	border-right: 1px solid var(--line, #eaeaea);
+	background:
+		linear-gradient(180deg, rgba(0, 112, 243, 0.06), transparent 40%),
+		var(--subtle, #fafafa);
+	padding: 3rem;
+	align-content: end;
+	gap: 0.75rem;
+}
+
+@media (min-width: 900px) {
+	.sitekit-auth .nx-auth__aside {
+		display: grid;
+	}
+}
+
+.sitekit-auth .nx-auth__aside h2 {
+	margin: 1.5rem 0 0.5rem;
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+	max-width: 12ch;
+}
+
+.sitekit-auth .nx-auth__aside p {
+	margin: 0;
+	color: var(--muted, #666);
+	max-width: 32ch;
+}
+
+.sitekit-auth .nx-auth__main {
+	display: flex;
+	align-items: center;
+	padding: 2.5rem 1.5rem;
+}
+
+.sitekit-auth .nx-auth__card,
+.sitekit-auth__panel {
+	width: min(100%, 420px);
+	margin-inline: auto;
+}
+
+.sitekit-auth__brand {
+	margin-bottom: 1.25rem;
+}
+
+.sitekit-auth__title {
+	font-size: 1.75rem;
+	font-weight: 700;
+	letter-spacing: -0.035em;
+	margin: 0.35rem 0 0.5rem;
+}
+
+.sitekit-auth__lede {
+	color: var(--muted, #666);
+	margin: 0 0 1.5rem;
+}
+
+.sitekit-auth__links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-top: 1.25rem;
+	font-size: 0.9rem;
+	color: var(--muted, #666);
+}
+
+.sitekit-auth__links a {
+	color: var(--fg, #000);
+	font-weight: 500;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.sitekit-auth__links a:hover {
+	color: var(--blue, #0070f3);
+}
+
+.sitekit-auth .portlet,
+.sitekit-auth .portlet-content,
+.sitekit-auth .portlet-boundary {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	background: transparent !important;
+	box-shadow: none !important;
+}
+
+.sitekit-auth .portlet-header,
+.sitekit-auth .portlet-title-text,
+.sitekit-auth .portlet-title-default,
+.sitekit-auth .portlet-icon-back,
+.sitekit-auth .nav-tabs,
+.sitekit-auth .nav-underline,
+.sitekit-auth .lfr-nav,
+.sitekit-auth .navigation-bar,
+.sitekit-auth .navbar,
+.sitekit-auth .portlet-topper,
+.sitekit-auth .login-container .nav {
+	display: none !important;
+}
+
+.sitekit-auth .form-group,
+.sitekit-auth .form-group-item {
+	margin-bottom: 0.9rem;
+}
+
+.sitekit-auth label {
+	font-size: 0.85rem;
+	font-weight: 500;
+	margin-bottom: 0.35rem;
+}
+
+.sitekit-auth .form-control,
+.sitekit-auth input[type="text"],
+.sitekit-auth input[type="password"],
+.sitekit-auth input[type="email"] {
+	width: 100%;
+	min-height: 42px;
+	padding: 0 0.75rem;
+	border: 1px solid var(--line-strong, #ddd) !important;
+	border-radius: 8px !important;
+	background: #fff !important;
+	box-shadow: none !important;
+}
+
+.sitekit-auth .form-control:focus,
+.sitekit-auth input:focus {
+	border-color: #000 !important;
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08) !important;
+	outline: none;
+}
+
+.sitekit-auth .btn,
+.sitekit-auth .btn-primary,
+.sitekit-auth button[type="submit"],
+.sitekit-auth .lfr-btn-label {
+	display: inline-flex !important;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 42px;
+	border-radius: 8px !important;
+	background: #000 !important;
+	border-color: #000 !important;
+	color: #fff !important;
+	font-weight: 500 !important;
+	letter-spacing: -0.01em !important;
+	text-transform: none !important;
+	transition: background 0.15s ease, transform 0.15s ease !important;
+}
+
+.sitekit-auth .btn:hover,
+.sitekit-auth .btn-primary:hover,
+.sitekit-auth button[type="submit"]:hover {
+	background: #333 !important;
+	border-color: #333 !important;
+	transform: translateY(-1px);
+}
+
+.sitekit-auth .btn:active,
+.sitekit-auth button[type="submit"]:active {
+	transform: scale(0.98);
+}
+
+.sitekit-auth__fallback .nx-btn {
+	width: 100%;
+}
+
+.d-lg-none {
+	display: inline-flex;
+}
+
+@media (min-width: 900px) {
+	.d-lg-none {
+		display: none !important;
+	}
+}

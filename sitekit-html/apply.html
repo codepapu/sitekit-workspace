@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apply — Sitekit</title>
+    <link rel="stylesheet" href="assets/css/sitekit.css" />
+  </head>
+  <body>
+    <header class="nx-nav nx-nav--conf" data-nav>
+      <div class="nx-nav__inner">
+        <a class="nx-brand" href="index.html">
+          <svg class="nx-brand__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path fill="currentColor" d="m12.8 3.44c-.38-.5-1.22-.5-1.6 0L2.2 15.44c-.18.24-.24.56-.17.85s.28.54.56.66l9 4c.13.06.27.09.41.09s.28-.03.41-.09l9-4c.28-.12.48-.37.56-.66s.02-.61-.17-.85L12.8 3.44Zm-1.8 15.06-6.45-2.87 6.45-8.6v11.47Zm2 0V7.04l6.45 8.6-6.45 2.86Z"/></svg>
+          Sitekit <span class="nx-badge">LEARN</span>
+        </a>
+        <div class="nx-actions">
+          <a class="nx-login" href="sign-in.html">Login</a>
+          <button class="nx-menu-btn" type="button" aria-label="Open menu" data-menu><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </header>
+    <div class="nx-drawer" data-drawer>
+      <div class="nx-drawer__scrim" data-drawer-close></div>
+      <nav class="nx-drawer__panel">
+        <a href="mentors.html">Speakers</a>
+        <a href="courses.html">Sessions</a>
+        <a href="apply.html">Workshops</a>
+        <a href="sign-in.html">Login</a>
+      </nav>
+    </div>
+
+    <main class="nx-page">
+      <div class="sk-wrap" data-reveal>
+        <p class="nx-kicker">Workshops</p>
+        <h1>Apply to teach</h1>
+        <p class="nx-page__lead">Conf-style header + focused form. Submits as wireframe toast for now.</p>
+        <form data-apply-form="Application received" style="max-width:480px">
+          <div class="nx-field"><label for="name">Full name</label><input id="name" required /></div>
+          <div class="nx-field"><label for="email">Email</label><input id="email" type="email" required /></div>
+          <div class="nx-field">
+            <label for="track">Track</label>
+            <select id="track" required>
+              <option value="">Select…</option>
+              <option>Design</option>
+              <option>Product</option>
+              <option>Motion</option>
+              <option>Engineering</option>
+            </select>
+          </div>
+          <div class="nx-field"><label for="note">Why Sitekit?</label><textarea id="note" required></textarea></div>
+          <button class="nx-btn nx-btn--black" type="submit">Submit application</button>
+        </form>
+      </div>
+    </main>
+    <footer class="nx-footer"><div class="sk-wrap nx-footer__copy"><a href="index.html">← Home</a></div></footer>
+    <div class="nx-toast" data-toast></div>
+    <script src="assets/js/sitekit.js"></script>
+  </body>
+</html>

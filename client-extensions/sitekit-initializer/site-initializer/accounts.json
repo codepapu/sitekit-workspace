@@ -1,0 +1,17 @@
+[
+	{
+		"externalReferenceCode": "SITEKIT_ADMIN_ADAM",
+		"name": "Sitekit Admin Adam",
+		"type": "person"
+	},
+	{
+		"externalReferenceCode": "SITEKIT_MEMBER_CARL",
+		"name": "Sitekit Member Carl",
+		"type": "person"
+	},
+	{
+		"externalReferenceCode": "SITEKIT_SUPPORT_SAM",
+		"name": "Sitekit Support Sam",
+		"type": "person"
+	}
+]

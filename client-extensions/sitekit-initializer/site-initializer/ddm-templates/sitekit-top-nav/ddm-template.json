@@ -1,0 +1,6 @@
+{
+	"className": "com.liferay.portal.kernel.theme.NavItem",
+	"ddmTemplateKey": "SITEKIT-TOP-NAV",
+	"name": "Sitekit Top Nav",
+	"resourceClassName": "com.liferay.portlet.display.template.PortletDisplayTemplate"
+}

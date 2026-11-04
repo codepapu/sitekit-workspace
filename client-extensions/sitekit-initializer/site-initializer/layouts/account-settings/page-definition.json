@@ -1,0 +1,116 @@
+{
+	"pageElement": {
+		"pageElements": [
+			{
+				"definition": {
+					"fragmentStyle": {
+						"paddingBottom": "6",
+						"paddingLeft": "2",
+						"paddingRight": "2",
+						"paddingTop": "5"
+					},
+					"layout": {
+						"paddingBottom": 6,
+						"paddingTop": 4,
+						"widthType": "Fixed"
+					}
+				},
+				"pageElements": [
+					{
+						"definition": {
+							"fragment": {
+								"key": "sitekit-heading"
+							},
+							"fragmentConfig": {
+								"displayLevel": "0",
+								"headingLevel": "h1"
+							},
+							"fragmentFields": [
+								{
+									"id": "element-text",
+									"value": {
+										"fragmentLink": {
+											"value_i18n": {}
+										},
+										"text": {
+											"value_i18n": {
+												"en_US": "Account settings"
+											}
+										}
+									}
+								}
+							],
+							"fragmentStyle": {
+								"marginBottom": "3"
+							}
+						},
+						"type": "Fragment"
+					},
+					{
+						"definition": {
+							"fragment": {
+								"key": "sitekit-text-block"
+							},
+							"fragmentConfig": {},
+							"fragmentFields": [
+								{
+									"id": "element-text",
+									"value": {
+										"fragmentLink": {
+											"value_i18n": {}
+										},
+										"text": {
+											"value_i18n": {
+												"en_US": "Manage your Sitekit profile, notification preferences, and learning visibility from this private page."
+											}
+										}
+									}
+								}
+							],
+							"fragmentStyle": {
+								"marginBottom": "5"
+							}
+						},
+						"type": "Fragment"
+					},
+					{
+						"definition": {
+							"fragment": {
+								"key": "sitekit-button"
+							},
+							"fragmentConfig": {},
+							"fragmentFields": [
+								{
+									"id": "link",
+									"value": {
+										"fragmentLink": {
+											"value": {
+												"href": {
+													"value": "/c/portal/update_password"
+												}
+											},
+											"value_i18n": {}
+										},
+										"text": {
+											"value_i18n": {
+												"en_US": "Update password"
+											}
+										}
+									}
+								}
+							]
+						},
+						"type": "Fragment"
+					}
+				],
+				"type": "Section"
+			}
+		],
+		"type": "Root"
+	},
+	"settings": {
+		"masterPage": {
+			"key": "private-area"
+		}
+	}
+}

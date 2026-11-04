@@ -1,0 +1,46 @@
+.nx-course-row {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 1rem;
+	align-items: center;
+	padding: 1.35rem 0;
+	border-bottom: 1px solid var(--line, #eaeaea);
+	color: inherit;
+	text-decoration: none;
+	transition: padding 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.nx-course-row:hover {
+	padding-left: 0.5rem;
+}
+
+.nx-course-row__label {
+	margin: 0 0 0.25rem;
+	font-family: var(--mono, ui-monospace, monospace);
+	font-size: 0.72rem;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--muted, #666);
+}
+
+.nx-course-row h3 {
+	margin: 0 0 0.3rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	letter-spacing: -0.025em;
+}
+
+.nx-course-row p:last-of-type {
+	margin: 0;
+	color: var(--muted, #666);
+	font-size: 0.95rem;
+}
+
+.nx-course-row__meta {
+	font-family: var(--mono, ui-monospace, monospace);
+	font-size: 0.75rem;
+	color: var(--muted, #666);
+	text-align: right;
+	white-space: nowrap;
+}

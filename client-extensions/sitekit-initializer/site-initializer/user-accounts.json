@@ -1,0 +1,44 @@
+[
+	{
+		"accountBriefs": [
+			{
+				"externalReferenceCode": "SITEKIT_ADMIN_ADAM"
+			}
+		],
+		"alternateName": "sitekit.admin.adam",
+		"emailAddress": "admin.adam@sitekit.example",
+		"familyName": "Adam",
+		"givenName": "Sitekit Admin",
+		"jobTitle": "Administrator",
+		"name": "Sitekit Admin Adam",
+		"password": "test"
+	},
+	{
+		"accountBriefs": [
+			{
+				"externalReferenceCode": "SITEKIT_MEMBER_CARL"
+			}
+		],
+		"alternateName": "sitekit.member.carl",
+		"emailAddress": "member.carl@sitekit.example",
+		"familyName": "Carl",
+		"givenName": "Sitekit Member",
+		"jobTitle": "Customer",
+		"name": "Sitekit Member Carl",
+		"password": "test"
+	},
+	{
+		"accountBriefs": [
+			{
+				"externalReferenceCode": "SITEKIT_SUPPORT_SAM"
+			}
+		],
+		"alternateName": "sitekit.support.sam",
+		"emailAddress": "support.sam@sitekit.example",
+		"familyName": "Sam",
+		"givenName": "Sitekit Support",
+		"jobTitle": "Support",
+		"name": "Sitekit Support Sam",
+		"password": "test"
+	}
+]

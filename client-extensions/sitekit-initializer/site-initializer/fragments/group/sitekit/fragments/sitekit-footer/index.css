@@ -1,0 +1,21 @@
+.sitekit-footer.nx-footer {
+	margin-top: 0;
+}
+
+.sitekit-footer-nav {
+	display: none;
+}
+
+.sitekit-footer-social {
+	display: inline-flex;
+	gap: 0.75rem;
+	align-items: center;
+}
+
+.sitekit-footer-social img {
+	opacity: 0.55;
+}
+
+.sitekit-footer-social a:hover img {
+	opacity: 1;
+}

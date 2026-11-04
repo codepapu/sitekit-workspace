@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="48" viewBox="0 0 220 48" fill="none">
+  <g transform="translate(2,4) scale(1.666)">
+    <path fill="#000000" d="m12.8 3.44c-.38-.5-1.22-.5-1.6 0L2.2 15.44c-.18.24-.24.56-.17.85s.28.54.56.66l9 4c.13.06.27.09.41.09s.28-.03.41-.09l9-4c.28-.12.48-.37.56-.66s.02-.61-.17-.85L12.8 3.44Zm-1.8 15.06-6.45-2.87 6.45-8.6v11.47Zm2 0V7.04l6.45 8.6-6.45 2.86Z"/>
+  </g>
+  <text x="52" y="32" fill="#000000" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="-0.04em">Sitekit</text>
+</svg>

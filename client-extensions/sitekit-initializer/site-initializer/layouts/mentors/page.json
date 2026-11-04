@@ -1,0 +1,11 @@
+{
+	"friendlyURL": "/mentors",
+	"hidden": false,
+	"name": "Mentors",
+	"name_i18n": {
+		"en_US": "Mentors"
+	},
+	"private": false,
+	"system": false,
+	"type": "Content"
+}

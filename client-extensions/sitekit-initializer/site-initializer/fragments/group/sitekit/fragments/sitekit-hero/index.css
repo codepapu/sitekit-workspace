@@ -1,0 +1,4 @@
+/* Hero visuals from layout-set .nx-hero */
+.sitekit-hero.nx-hero {
+	min-height: calc(100svh - 112px);
+}

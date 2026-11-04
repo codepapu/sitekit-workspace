@@ -1,0 +1,42 @@
+[
+	{
+		"active": "true",
+		"criteria": {
+			"criteria": {
+				"user": {
+					"conjunction": "and",
+					"filterString": "(roleIds eq '[$ROLE_ID:Teacher$]')",
+					"typeValue": "model"
+				}
+			},
+			"filterStrings": {
+				"model": "(roleIds eq '[$ROLE_ID:Teacher$]')"
+			}
+		},
+		"name_i18n": {
+			"en-US": "Sitekit Instructors"
+		},
+		"segmentsEntryKey": "SITEKIT-INSTRUCTORS",
+		"type": "com.liferay.portal.kernel.model.User"
+	},
+	{
+		"active": "true",
+		"criteria": {
+			"criteria": {
+				"user": {
+					"conjunction": "and",
+					"filterString": "(roleIds eq '[$ROLE_ID:Student$]')",
+					"typeValue": "model"
+				}
+			},
+			"filterStrings": {
+				"model": "(roleIds eq '[$ROLE_ID:Student$]')"
+			}
+		},
+		"name_i18n": {
+			"en-US": "Sitekit Learners"
+		},
+		"segmentsEntryKey": "SITEKIT-LEARNERS",
+		"type": "com.liferay.portal.kernel.model.User"
+	}
+]

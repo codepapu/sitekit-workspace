@@ -1,0 +1,11 @@
+{
+	"friendlyURL": "/resources",
+	"hidden": false,
+	"name": "Resources",
+	"name_i18n": {
+		"en_US": "Resources"
+	},
+	"private": true,
+	"system": false,
+	"type": "Content"
+}

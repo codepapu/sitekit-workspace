@@ -1,0 +1,45 @@
+.nx-post time {
+	font-family: var(--mono, ui-monospace, monospace);
+	font-size: 0.75rem;
+	color: var(--muted, #666);
+}
+
+.nx-post h3 {
+	margin: 0.35rem 0;
+	font-size: 1.1rem;
+	font-weight: 600;
+	letter-spacing: -0.02em;
+}
+
+.nx-post h3 a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.nx-post p {
+	margin: 0;
+	color: var(--muted, #666);
+	font-size: 0.92rem;
+}
+
+.nx-post__media-link {
+	display: block;
+	margin-bottom: 0.85rem;
+	border: 1px solid var(--line, #eaeaea);
+	border-radius: 8px;
+	overflow: hidden;
+	aspect-ratio: 16 / 10;
+	background: var(--subtle, #fafafa);
+	transition: border-color 0.2s ease;
+}
+
+.nx-post:hover .nx-post__media-link {
+	border-color: var(--line-strong, #ddd);
+}
+
+.nx-post__media-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}

@@ -1,0 +1,7 @@
+{
+	"className": "com.liferay.template.model.TemplateEntry",
+	"ddmTemplateKey": "SITEKIT-COURSE-CHIP",
+	"infoItemClassName": "com.liferay.journal.model.JournalArticle",
+	"name": "Sitekit Course Chip",
+	"resourceClassName": "com.liferay.template.model.TemplateEntry"
+}

@@ -1,0 +1,18 @@
+[
+	{
+		"externalReferenceCode": "SITEKIT-HQ",
+		"name": "Sitekit Headquarters"
+	},
+	{
+		"externalReferenceCode": "SITEKIT-EU",
+		"name": "Sitekit Europe"
+	},
+	{
+		"externalReferenceCode": "SITEKIT-US",
+		"name": "Sitekit Americas"
+	},
+	{
+		"externalReferenceCode": "SITEKIT-LEARNING",
+		"name": "Sitekit Learning Ops"
+	}
+]

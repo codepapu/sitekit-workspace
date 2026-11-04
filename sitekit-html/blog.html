@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog — Sitekit</title>
+    <link rel="stylesheet" href="assets/css/sitekit.css" />
+  </head>
+  <body>
+    <header class="nx-nav" data-nav>
+      <div class="nx-nav__inner">
+        <a class="nx-brand" href="index.html">
+          <svg class="nx-brand__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path fill="currentColor" d="m12.8 3.44c-.38-.5-1.22-.5-1.6 0L2.2 15.44c-.18.24-.24.56-.17.85s.28.54.56.66l9 4c.13.06.27.09.41.09s.28-.03.41-.09l9-4c.28-.12.48-.37.56-.66s.02-.61-.17-.85L12.8 3.44Zm-1.8 15.06-6.45-2.87 6.45-8.6v11.47Zm2 0V7.04l6.45 8.6-6.45 2.86Z" fill="currentColor"/></svg>
+          Sitekit
+        </a>
+        <ul class="nx-links">
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="index.html#learn">Learn</a></li>
+          <li><a href="mentors.html">Showcase</a></li>
+          <li><a class="is-active" href="blog.html">Blog</a></li>
+          <li><a href="apply.html">Apply <span class="ext">↗</span></a></li>
+          <li><a href="create-account.html">Deploy <span class="ext">↗</span></a></li>
+        </ul>
+        <div class="nx-actions">
+          <button class="nx-search" type="button" data-search>Search… <kbd>⌘K</kbd></button>
+          <a class="nx-login" href="sign-in.html">Login</a>
+          <button class="nx-menu-btn" type="button" aria-label="Open menu" data-menu><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </header>
+    <div class="nx-drawer" data-drawer>
+      <div class="nx-drawer__scrim" data-drawer-close></div>
+      <nav class="nx-drawer__panel">
+        <a href="mentors.html">Speakers</a>
+        <a href="courses.html">Sessions</a>
+        <a href="blog.html">Blog</a>
+        <a href="sign-in.html">Login</a>
+      </nav>
+    </div>
+
+    <main class="nx-page">
+      <div class="sk-wrap" data-reveal>
+        <p class="nx-kicker">Journal</p>
+        <h1>Blog</h1>
+        <p class="nx-page__lead">Release notes energy—mono dates, strong titles, quiet supporting lines.</p>
+        <div class="nx-blog" data-reveal-stagger>
+          <article class="nx-post">
+            <div class="nx-post__media"></div>
+            <time datetime="2026-10-12">October 12, 2026</time>
+            <h3>Why learning products should feel like software</h3>
+            <p>Borrow Next.js navigation discipline so learners never wonder where they are.</p>
+          </article>
+          <article class="nx-post">
+            <div class="nx-post__media"></div>
+            <time datetime="2026-09-28">September 28, 2026</time>
+            <h3>Mentorship without calendar chaos</h3>
+            <p>Office hours, async critique, and progress that stays visible between sessions.</p>
+          </article>
+          <article class="nx-post">
+            <div class="nx-post__media"></div>
+            <time datetime="2026-09-04">September 4, 2026</time>
+            <h3>Motion that teaches state</h3>
+            <p>Animation as explanation—watermark fade, reveal stagger, speaker hover.</p>
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer class="nx-footer"><div class="sk-wrap nx-footer__copy"><a href="index.html">← Home</a></div></footer>
+    <div class="nx-toast" data-toast></div>
+    <script src="assets/js/sitekit.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+.sitekit-navbar.nx-nav {
+	width: 100%;
+}
+
+.sitekit-navbar .nx-brand__mark {
+	width: 22px;
+	height: 22px;
+	flex-shrink: 0;
+}
+
+.sitekit-navbar-links .portlet,
+.sitekit-navbar-links .portlet-boundary,
+.sitekit-navbar-links .portlet-body {
+	margin: 0;
+	padding: 0;
+}
+
+.sitekit-navbar .nx-user {
+	position: relative;
+}
+
+.sitekit-navbar .nx-user summary {
+	list-style: none;
+	cursor: pointer;
+}
+
+.sitekit-navbar .nx-user summary::-webkit-details-marker {
+	display: none;
+}
+
+.sitekit-navbar .nx-user-menu {
+	position: absolute;
+	right: 0;
+	top: calc(100% + 8px);
+	min-width: 200px;
+	padding: 0.5rem;
+	border: 1px solid var(--line, #eaeaea);
+	border-radius: 12px;
+	background: #fff;
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+	z-index: 60;
+}
+
+.sitekit-navbar .nx-user-menu a {
+	display: block;
+	padding: 0.65rem 0.75rem;
+	border-radius: 8px;
+	font-size: 0.9rem;
+	text-decoration: none;
+	color: inherit;
+}
+
+.sitekit-navbar .nx-user-menu a:hover {
+	background: var(--subtle, #fafafa);
+}
+
+.sitekit-navbar .nx-btn--black:hover {
+	background: #333;
+}
+
+.sitekit-navbar .nx-login:hover {
+	color: var(--fg, #000);
+}
+
+@media (max-width: 979px) {
+	.sitekit-navbar-links {
+		display: none !important;
+	}
+}
+

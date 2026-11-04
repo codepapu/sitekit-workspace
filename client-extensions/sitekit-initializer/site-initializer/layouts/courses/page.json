@@ -1,0 +1,11 @@
+{
+	"friendlyURL": "/courses",
+	"hidden": false,
+	"name": "Courses",
+	"name_i18n": {
+		"en_US": "Courses"
+	},
+	"private": false,
+	"system": false,
+	"type": "Content"
+}

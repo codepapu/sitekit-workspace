@@ -1,0 +1,16 @@
+[#assign
+	publicFriendlyURL = themeDisplay.getPathFriendlyURLPublic() + themeDisplay.getSiteGroup().getFriendlyURL()
+/]
+
+<section class="nx-deploy" data-reveal>
+	<div class="sk-wrap">
+		<h2 data-lfr-editable-id="deploy-title" data-lfr-editable-type="text">Ready to start?</h2>
+		<p data-lfr-editable-id="deploy-lead" data-lfr-editable-type="text">
+			Create an account or explore mentors—wired for the Sitekit Site Initializer.
+		</p>
+		<div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap">
+			<a class="nx-btn nx-btn--black" href="${publicFriendlyURL}/create-account">Get Started</a>
+			<a class="nx-btn nx-btn--ghost" href="${publicFriendlyURL}/mentors">View mentors</a>
+		</div>
+	</div>
+</section>

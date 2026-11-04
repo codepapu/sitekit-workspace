@@ -1,0 +1,9 @@
+{
+	"description": "Topics and categories for the Sitekit learning site",
+	"externalReferenceCode": "SITEKIT_VOCAB",
+	"name": "Sitekit",
+	"name_i18n": {
+		"en_US": "Sitekit"
+	},
+	"viewableBy": "Anyone"
+}

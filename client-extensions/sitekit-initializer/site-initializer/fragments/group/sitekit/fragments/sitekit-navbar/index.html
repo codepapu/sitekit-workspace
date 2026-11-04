@@ -1,0 +1,73 @@
+[#assign
+	privateGroupFriendlyURL = themeDisplay.getPathFriendlyURLPrivateGroup() + themeDisplay.getSiteGroup().getFriendlyURL()
+	publicFriendlyURL = themeDisplay.getPathFriendlyURLPublic() + themeDisplay.getSiteGroup().getFriendlyURL()
+	userName = htmlUtil.escape(themeDisplay.getUser().getFirstName())
+/]
+
+<header class="nx-nav sitekit-navbar" data-nav>
+	<div class="nx-nav__inner">
+		<a class="nx-brand" href="${publicFriendlyURL}" aria-label="Sitekit home">
+			<svg class="nx-brand__mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+				<path d="m12.8 3.44c-.38-.5-1.22-.5-1.6 0L2.2 15.44c-.18.24-.24.56-.17.85s.28.54.56.66l9 4c.13.06.27.09.41.09s.28-.03.41-.09l9-4c.28-.12.48-.37.56-.66s.02-.61-.17-.85L12.8 3.44Zm-1.8 15.06-6.45-2.87 6.45-8.6v11.47Zm2 0V7.04l6.45 8.6-6.45 2.86Z"/>
+			</svg>
+			<span data-lfr-editable-id="brand-text" data-lfr-editable-type="text">Sitekit</span>
+			<img alt="" class="d-none" data-lfr-editable-id="imageLogo" data-lfr-editable-type="image" src="[resources:sitekit_logo.svg]" width="1" height="1" />
+		</a>
+
+		<div class="nx-links sitekit-navbar-links">
+			[#attempt]
+				<lfr-widget-nav id="nav"></lfr-widget-nav>
+			[#recover]
+				<ul class="sitekit-top-nav">
+					<li class="sitekit-top-nav__item"><a class="sitekit-top-nav__link" href="${publicFriendlyURL}/courses">Courses</a></li>
+					<li class="sitekit-top-nav__item"><a class="sitekit-top-nav__link" href="${publicFriendlyURL}/mentors">Showcase</a></li>
+					<li class="sitekit-top-nav__item"><a class="sitekit-top-nav__link" href="${publicFriendlyURL}/blog">Blog</a></li>
+					<li class="sitekit-top-nav__item"><a class="sitekit-top-nav__link" href="${publicFriendlyURL}/apply">Apply</a></li>
+				</ul>
+			[/#attempt]
+		</div>
+
+		<div class="nx-actions">
+			<button class="nx-search d-none d-lg-inline-flex" type="button" data-sitekit-search>
+				Search…
+				<kbd>⌘K</kbd>
+			</button>
+
+			[#if themeDisplay.isSignedIn()]
+				<details class="nx-user">
+					<summary class="nx-login">${userName}</summary>
+					<div class="nx-user-menu">
+						<a href="${privateGroupFriendlyURL}/my-learning">My Learning</a>
+						<a href="${privateGroupFriendlyURL}/dashboard">Dashboard</a>
+						<a href="${privateGroupFriendlyURL}/notifications">Notifications</a>
+						<a href="${privateGroupFriendlyURL}/account-settings">Account Settings</a>
+						<a href="${htmlUtil.escape(themeDisplay.getURLSignOut())}?referer=${publicFriendlyURL}">Sign Out</a>
+					</div>
+				</details>
+			[#else]
+				<a class="nx-login" href="${publicFriendlyURL}/sign-in">Login</a>
+				<a class="nx-btn nx-btn--black d-none d-md-inline-flex" href="${publicFriendlyURL}/create-account">Get Started</a>
+			[/#if]
+
+			<button class="nx-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" data-sitekit-menu>
+				<span></span><span></span><span></span>
+			</button>
+		</div>
+	</div>
+</header>
+
+<div class="nx-drawer" data-sitekit-drawer>
+	<div class="nx-drawer__scrim" data-sitekit-drawer-close></div>
+	<nav class="nx-drawer__panel" aria-label="Mobile">
+		<a href="${publicFriendlyURL}/mentors">Speakers</a>
+		<a href="${publicFriendlyURL}/courses">Sessions</a>
+		<a href="${publicFriendlyURL}/apply">Workshops</a>
+		<a href="${publicFriendlyURL}/blog">Blog</a>
+		[#if themeDisplay.isSignedIn()]
+			<a href="${privateGroupFriendlyURL}/dashboard">Dashboard</a>
+		[#else]
+			<a href="${publicFriendlyURL}/sign-in">Login</a>
+			<a href="${publicFriendlyURL}/create-account">Get Started</a>
+		[/#if]
+	</nav>
+</div>

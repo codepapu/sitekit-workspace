@@ -1,0 +1,26 @@
+[#assign
+	publicFriendlyURL = themeDisplay.getPathFriendlyURLPublic() + themeDisplay.getSiteGroup().getFriendlyURL()
+/]
+
+<section class="nx-hero sitekit-hero">
+	<div class="nx-hero__watermark" data-watermark aria-hidden="true" data-lfr-editable-id="hero-watermark" data-lfr-editable-type="text">SITE</div>
+
+	<div class="nx-hero__content">
+		<h1 data-lfr-editable-id="hero-title" data-lfr-editable-type="text">The learning platform for the web</h1>
+		<p class="nx-hero__sub" data-lfr-editable-id="hero-subtitle" data-lfr-editable-type="text">
+			Courses, classrooms, and mentors in one coherent path—used when clarity and craft matter.
+		</p>
+		<div class="nx-hero__cta">
+			<a class="nx-btn nx-btn--black" href="${publicFriendlyURL}/create-account">Get Started</a>
+			<div class="nx-cmd">
+				<code data-lfr-editable-id="hero-cmd" data-lfr-editable-type="text">npx create-sitekit@latest</code>
+				<button type="button" aria-label="Copy command" data-copy="npx create-sitekit@latest">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+						<rect x="5" y="5" width="8" height="8" rx="1.5" stroke="currentColor" />
+						<path d="M3 10V3.5A1.5 1.5 0 0 1 4.5 2H10" stroke="currentColor" />
+					</svg>
+				</button>
+			</div>
+		</div>
+	</div>
+</section>

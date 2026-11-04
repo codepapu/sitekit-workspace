@@ -1,0 +1,20 @@
+sitekit-initializer:
+    name: Sitekit Initializer
+    oAuthApplicationHeadlessServer: sitekit-initializer-oahs
+    siteExternalReferenceCode: SITEKIT
+    siteName: sitekit
+    type: siteInitializer
+
+sitekit-initializer-oahs:
+    .serviceAddress: localhost:8080
+    .serviceScheme: http
+    name: Sitekit Initializer OAuth Application Headless Server
+    scopes:
+        - Liferay.Headless.Admin.List.Type.everything
+        - Liferay.Headless.Admin.Taxonomy.everything
+        - Liferay.Headless.Admin.User.everything
+        - Liferay.Headless.Commerce.Admin.Catalog.everything
+        - Liferay.Headless.Commerce.Admin.Channel.everything
+        - Liferay.Headless.Delivery.everything
+        - Liferay.Headless.Site.everything
+    type: oAuthApplicationHeadlessServer

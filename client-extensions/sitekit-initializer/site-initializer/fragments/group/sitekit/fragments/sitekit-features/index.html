@@ -1,0 +1,48 @@
+[#assign
+	publicFriendlyURL = themeDisplay.getPathFriendlyURLPublic() + themeDisplay.getSiteGroup().getFriendlyURL()
+/]
+
+<section class="nx-section nx-section--border" id="learn">
+	<div class="sk-wrap">
+		<div data-reveal>
+			<p class="nx-kicker" data-lfr-editable-id="feat-kicker" data-lfr-editable-type="text">Platform</p>
+			<h2 class="nx-h2" data-lfr-editable-id="feat-title" data-lfr-editable-type="text">Everything you need to learn and ship</h2>
+			<p class="nx-lead" data-lfr-editable-id="feat-lead" data-lfr-editable-type="text">
+				Hairline feature grid—courses, classrooms, mentors, and editorial in one coherent product surface.
+			</p>
+		</div>
+
+		<div class="nx-grid" data-reveal-stagger>
+			<a class="nx-card" href="${publicFriendlyURL}/courses">
+				<svg class="nx-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 7h16M4 12h10M4 17h14" /></svg>
+				<h3 data-lfr-editable-id="card1-title" data-lfr-editable-type="text">Built-in learning paths</h3>
+				<p data-lfr-editable-id="card1-body" data-lfr-editable-type="text">Automatic sequencing of lessons, projects, and reviews for clearer outcomes.</p>
+			</a>
+			<a class="nx-card" href="${publicFriendlyURL}/courses">
+				<svg class="nx-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M12 4v16" /></svg>
+				<h3 data-lfr-editable-id="card2-title" data-lfr-editable-type="text">Live classrooms</h3>
+				<p data-lfr-editable-id="card2-body" data-lfr-editable-type="text">Stream critique and office hours with the same calm surface as async modules.</p>
+			</a>
+			<a class="nx-card" href="${publicFriendlyURL}/mentors">
+				<svg class="nx-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="16" cy="9" r="2.5"/><path d="M3 19c1.5-3 4-4.5 6-4.5S13.5 16 15 19"/></svg>
+				<h3 data-lfr-editable-id="card3-title" data-lfr-editable-type="text">Mentor network</h3>
+				<p data-lfr-editable-id="card3-body" data-lfr-editable-type="text">Practitioners from product teams—Conf speakers presentation language.</p>
+			</a>
+			<a class="nx-card" href="${publicFriendlyURL}/blog">
+				<svg class="nx-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 5h14v14H5zM8 9h8M8 13h6"/></svg>
+				<h3 data-lfr-editable-id="card4-title" data-lfr-editable-type="text">Editorial system</h3>
+				<p data-lfr-editable-id="card4-body" data-lfr-editable-type="text">Guides and notes that stay readable—mono meta, strong titles, quiet body.</p>
+			</a>
+			<a class="nx-card" href="${publicFriendlyURL}/apply">
+				<svg class="nx-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3v18M5 10l7-7 7 7"/></svg>
+				<h3 data-lfr-editable-id="card5-title" data-lfr-editable-type="text">Apply to teach</h3>
+				<p data-lfr-editable-id="card5-body" data-lfr-editable-type="text">One form, one purpose—mentor applications without clutter.</p>
+			</a>
+			<a class="nx-card" href="${publicFriendlyURL}/sign-in">
+				<svg class="nx-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+				<h3 data-lfr-editable-id="card6-title" data-lfr-editable-type="text">Auth that disappears</h3>
+				<p data-lfr-editable-id="card6-body" data-lfr-editable-type="text">Sign-in and register with Next-like chrome around Liferay portlets.</p>
+			</a>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,74 @@
+[
+	{
+		"externalReferenceCode": "SITENAVIGATIONMENU1",
+		"menuItems": [
+			{
+				"externalReferenceCode": "SK-NAV-HOME",
+				"friendlyURL": "/home",
+				"privateLayout": false,
+				"type": "layout"
+			},
+			{
+				"externalReferenceCode": "SK-NAV-COURSES",
+				"friendlyURL": "/courses",
+				"privateLayout": false,
+				"type": "layout"
+			},
+			{
+				"externalReferenceCode": "SK-NAV-MENTORS",
+				"friendlyURL": "/mentors",
+				"privateLayout": false,
+				"type": "layout"
+			},
+			{
+				"externalReferenceCode": "SK-NAV-BLOG",
+				"friendlyURL": "/blog",
+				"privateLayout": false,
+				"type": "layout"
+			},
+			{
+				"externalReferenceCode": "SK-NAV-APPLY",
+				"friendlyURL": "/apply",
+				"privateLayout": false,
+				"type": "layout"
+			}
+		],
+		"name": "Main Navigation"
+	},
+	{
+		"externalReferenceCode": "SITENAVIGATIONMENU2",
+		"menuItems": [
+			{
+				"externalReferenceCode": "SK-NAV-DASHBOARD",
+				"friendlyURL": "/dashboard",
+				"privateLayout": true,
+				"type": "layout"
+			},
+			{
+				"externalReferenceCode": "SK-NAV-MY-LEARNING",
+				"friendlyURL": "/my-learning",
+				"privateLayout": true,
+				"type": "layout"
+			},
+			{
+				"externalReferenceCode": "SK-NAV-RESOURCES",
+				"friendlyURL": "/resources",
+				"privateLayout": true,
+				"type": "layout"
+			},
+			{
+				"externalReferenceCode": "SK-NAV-NOTIFICATIONS",
+				"friendlyURL": "/notifications",
+				"privateLayout": true,
+				"type": "layout"
+			},
+			{
+				"externalReferenceCode": "SK-NAV-ACCOUNT-SETTINGS",
+				"friendlyURL": "/account-settings",
+				"privateLayout": true,
+				"type": "layout"
+			}
+		],
+		"name": "Private Area Navigation"
+	}
+]

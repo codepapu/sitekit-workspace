@@ -1,0 +1,6 @@
+{
+	"className": "com.liferay.asset.kernel.model.AssetEntry",
+	"ddmTemplateKey": "SITEKIT-ASSET-MOSAIC",
+	"name": "Sitekit Asset Mosaic",
+	"resourceClassName": "com.liferay.portlet.display.template.PortletDisplayTemplate"
+}

@@ -1,0 +1,6 @@
+{
+	"className": "com.liferay.portal.kernel.servlet.taglib.ui.LanguageEntry",
+	"ddmTemplateKey": "SITEKIT-LANG-PILLS",
+	"name": "Sitekit Lang Pills",
+	"resourceClassName": "com.liferay.portlet.display.template.PortletDisplayTemplate"
+}

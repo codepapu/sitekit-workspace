@@ -1,0 +1,77 @@
+[
+	{
+		"actionIds": [
+			"UPDATE",
+			"VIEW"
+		],
+		"primKey": "0",
+		"resourceName": "[$OBJECT_DEFINITION_CLASS_NAME:SitekitProgressTracker$]",
+		"roleName": "Sitekit Members",
+		"scope": "1"
+	},
+	{
+		"actionIds": [
+			"VIEW"
+		],
+		"primKey": "0",
+		"resourceName": "com.liferay.document.library",
+		"roleName": "Sitekit Members",
+		"scope": "1"
+	},
+	{
+		"actionIds": [
+			"VIEW"
+		],
+		"primKey": "0",
+		"resourceName": "com.liferay.document.library.kernel.model.DLFileEntryMetadata-com.liferay.dynamic.data.mapping.model.DDMStructure",
+		"roleName": "Sitekit Members",
+		"scope": "1"
+	},
+	{
+		"actionIds": [
+			"VIEW"
+		],
+		"primKey": "0",
+		"resourceName": "com.liferay.document.library.kernel.model.DLFileShortcut",
+		"roleName": "Sitekit Members",
+		"scope": "1"
+	},
+	{
+		"actionIds": [
+			"ACCESS",
+			"VIEW"
+		],
+		"primKey": "0",
+		"resourceName": "com.liferay.document.library.kernel.model.DLFolder",
+		"roleName": "Sitekit Members",
+		"scope": "1"
+	},
+	{
+		"actionIds": [
+			"ACCESS",
+			"VIEW"
+		],
+		"primKey": "0",
+		"resourceName": "com.liferay.journal.model.JournalFolder",
+		"roleName": "Sitekit Members",
+		"scope": "1"
+	},
+	{
+		"actionIds": [
+			"VIEW"
+		],
+		"primKey": "0",
+		"resourceName": "com.liferay.portal.kernel.model.User",
+		"roleName": "Sitekit Members",
+		"scope": "1"
+	},
+	{
+		"actionIds": [
+			"VIEW"
+		],
+		"primKey": "0",
+		"resourceName": "com_liferay_users_admin_web_portlet_UsersAdminPortlet",
+		"roleName": "Sitekit Members",
+		"scope": "1"
+	}
+]

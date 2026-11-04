@@ -1,0 +1,16 @@
+/* .sp-hero in layout-set CSS */
+
+.nx-speakers-grid {
+	padding-bottom: 4rem;
+}
+.nx-speakers-grid .sp-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1.25rem 1.5rem;
+}
+@media (max-width: 900px) {
+	.nx-speakers-grid .sp-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+	.nx-speakers-grid .sp-grid { grid-template-columns: 1fr; }
+}

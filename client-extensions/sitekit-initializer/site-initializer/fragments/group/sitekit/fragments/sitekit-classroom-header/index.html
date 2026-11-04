@@ -1,0 +1,76 @@
+[#assign
+	navUserClass = ""
+	privateUserFriendlyURL = themeDisplay.getPathFriendlyURLPrivateUser() + "/" + themeDisplay.getUser().getFirstName()
+	publicFriendlyURL = themeDisplay.getPathFriendlyURLPublic() + themeDisplay.getSiteGroup().getFriendlyURL()
+	publicSiteNavbarClass =""
+	userName = htmlUtil.escape(themeDisplay.getUser().getFirstName())
+/]
+
+[#if !themeDisplay.isSignedIn()]
+	[#assign publicSiteNavbarClass = "logged-in" /]
+[/#if]
+
+<nav class="sitekit-classroom-header">
+		<div class="align-items-center d-flex">
+					<a class="d-inline-flex mr-2 mr-md-3 site-logo" href="${publicFriendlyURL}">
+			<svg class="nx-brand__mark" viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+				<path d="m12.8 3.44c-.38-.5-1.22-.5-1.6 0L2.2 15.44c-.18.24-.24.56-.17.85s.28.54.56.66l9 4c.13.06.27.09.41.09s.28-.03.41-.09l9-4c.28-.12.48-.37.56-.66s.02-.61-.17-.85L12.8 3.44Zm-1.8 15.06-6.45-2.87 6.45-8.6v11.47Zm2 0V7.04l6.45 8.6-6.45 2.86Z"/>
+			</svg>
+			<img alt="" class="d-none navbar-logo" data-lfr-editable-id="imageLogo" data-lfr-editable-type="image" src="[resources:sitekit_symbol.svg]" width="26" />
+		</a>
+
+		<h5 class="course-name pl-2 pl-md-3" data-lfr-editable-id="courseName" data-lfr-editable-type="text">
+			Course Name
+		</h5>
+		</div>
+<div id="navbarSupportedContent">
+
+			<ul class="sitekit-navbar-user navbar-nav">
+				[#if themeDisplay.isSignedIn()]
+					<li class="dropdown nav-item">
+						<button aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link" data-toggle="liferay-dropdown" id="${fragmentEntryLinkNamespace}_dropdown_menu" type="button">
+							<img alt="" class="btn btn-monospaced" src="[resources:icon_user_logged.svg]" />
+
+							<span class="font-weight-bold ml-1">${userName}</span>
+						</button>
+
+						<ul aria-labelledby="${fragmentEntryLinkNamespace}_dropdown_menu" class="dropdown-menu right">
+							<li>
+								<a class="dropdown-item" href="${publicFriendlyURL}/my-learning">
+									My Learning
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="${publicFriendlyURL}/notifications">
+									Notifications
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="${publicFriendlyURL}/account-settings">
+									Account Settings
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="${publicFriendlyURL}">
+									Home
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="${htmlUtil.escape(themeDisplay.getURLSignOut())}?referer=${publicFriendlyURL}">
+									Sign Out
+								</a>
+							</li>
+						</ul>
+					</li>
+				[#else]
+					<li class="nav-item">
+						<a class="nav-link" href="${publicFriendlyURL}/sign-in">
+							<img alt="" class="btn btn-monospaced p-1" src="[resources:icon_user_not_logged.svg]" />
+
+							<span class="small text-uppercase">Sign In</span>
+						</a>
+					</li>
+				[/#if]
+			</ul>
+		</div>
+</nav>

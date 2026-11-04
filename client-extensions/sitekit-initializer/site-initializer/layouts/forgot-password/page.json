@@ -1,0 +1,11 @@
+{
+	"friendlyURL": "/forgot-password",
+	"hidden": true,
+	"name": "Forgot Password",
+	"name_i18n": {
+		"en_US": "Forgot Password"
+	},
+	"private": false,
+	"system": false,
+	"type": "Content"
+}

@@ -1,0 +1,63 @@
+[#assign
+	publicFriendlyURL = themeDisplay.getPathFriendlyURLPublic() + themeDisplay.getSiteGroup().getFriendlyURL()
+	privateGroupFriendlyURL = themeDisplay.getPathFriendlyURLPrivateGroup() + themeDisplay.getSiteGroup().getFriendlyURL()
+/]
+
+<main class="nx-auth sitekit-auth sign-in">
+	<aside class="nx-auth__aside">
+		<a class="nx-brand" href="${publicFriendlyURL}" aria-label="Sitekit home">
+			<svg class="nx-brand__mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+				<path d="m12.8 3.44c-.38-.5-1.22-.5-1.6 0L2.2 15.44c-.18.24-.24.56-.17.85s.28.54.56.66l9 4c.13.06.27.09.41.09s.28-.03.41-.09l9-4c.28-.12.48-.37.56-.66s.02-.61-.17-.85L12.8 3.44Zm-1.8 15.06-6.45-2.87 6.45-8.6v11.47Zm2 0V7.04l6.45 8.6-6.45 2.86Z"/>
+			</svg>
+			Sitekit
+		</a>
+		<h2 data-lfr-editable-id="auth-aside-title" data-lfr-editable-type="text">Welcome back</h2>
+		<p data-lfr-editable-id="auth-aside-lede" data-lfr-editable-type="text">
+			Next.js-calm auth chrome—access classrooms, mentors, and your cohort workspace.
+		</p>
+	</aside>
+
+	<div class="nx-auth__main">
+		<div class="nx-auth__card sitekit-auth__panel">
+			<a class="nx-brand sitekit-auth__brand d-lg-none" href="${publicFriendlyURL}" aria-label="Sitekit home">
+				<svg class="nx-brand__mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+					<path d="m12.8 3.44c-.38-.5-1.22-.5-1.6 0L2.2 15.44c-.18.24-.24.56-.17.85s.28.54.56.66l9 4c.13.06.27.09.41.09s.28-.03.41-.09l9-4c.28-.12.48-.37.56-.66s.02-.61-.17-.85L12.8 3.44Zm-1.8 15.06-6.45-2.87 6.45-8.6v11.47Zm2 0V7.04l6.45 8.6-6.45 2.86Z"/>
+				</svg>
+				Sitekit
+			</a>
+			<img alt="" class="d-none auth-logo" src="[resources:sitekit_logo.svg]" />
+
+			<p class="nx-kicker">Account</p>
+			<h1 class="sitekit-auth__title" data-lfr-editable-id="auth-title" data-lfr-editable-type="text">Login</h1>
+			<p class="sitekit-auth__lede" data-lfr-editable-id="auth-lede" data-lfr-editable-type="text">
+				Sign in to continue learning.
+			</p>
+
+			[#attempt]
+				[@liferay_portlet.runtime
+					instanceId="sitekitLogin"
+					portletName="com_liferay_login_web_portlet_LoginPortlet"
+				/]
+			[#recover]
+				<div class="sitekit-auth__fallback">
+					<a class="nx-btn nx-btn--black" href="/c/portal/login">Open sign in</a>
+				</div>
+			[/#attempt]
+
+			<nav class="sitekit-auth__links" aria-label="Account helpers">
+				<a href="${publicFriendlyURL}/forgot-password">Forgot password?</a>
+				<span aria-hidden="true">·</span>
+				<a href="${publicFriendlyURL}/create-account">Get Started</a>
+			</nav>
+		</div>
+	</div>
+</main>
+
+<script>
+	const redirect = document.querySelector('#_com_liferay_login_web_portlet_LoginPortlet_INSTANCE_sitekitLogin_redirect')
+		|| document.querySelector('#_com_liferay_login_web_portlet_LoginPortlet_redirect');
+
+	if (redirect) {
+		redirect.setAttribute('value', '${privateGroupFriendlyURL}/dashboard');
+	}
+</script>
